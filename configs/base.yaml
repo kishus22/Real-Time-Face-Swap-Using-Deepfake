@@ -1,0 +1,34 @@
+# Detection Settings
+detection:
+  model: buffalo_l
+  threshold: 0.7
+  min_face_size: 20
+  max_num_faces: 10
+  detection_size: [640, 640]
+
+# Swapping Settings
+swapping:
+  model: deepface_live
+  enable_enhancer: true
+  enhancer_model: gfpgan
+  enable_mask: true
+  mask_type: face_parsing
+  blend_edges: true
+  blend_thickness: 0.5
+  color_correction: true
+  sharpen: true
+
+# Performance Settings
+performance:
+  use_gpu: true
+  gpu_id: 0
+  frame_skip: 0
+  tracking_enabled: true
+  tracking_sensitivity: 0.85
+
+# Output Settings
+output:
+  quality: 95
+  show_fps: true
+  show_landmarks: false
+  show_bbox: false
